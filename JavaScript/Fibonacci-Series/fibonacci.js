@@ -12,7 +12,3 @@ function fibonacci(number){
 
     return fiboArray;
 }
-
-
-  
-  
