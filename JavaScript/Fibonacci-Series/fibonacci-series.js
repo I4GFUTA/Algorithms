@@ -1,14 +1,25 @@
-// Prints fibonacci series till nth number
+// Prints fibonacci sequence till nth term
 // Javascript ES6+
 // Author: @manisacharya
 
-const fibonacci = (num) => {
-  
-  let fib = [0, 1];
-
-  for(let i = 2; i <= num; i++) {
-    fib.push(fib[i - 1] + fib[i - 2]);
+const fibonacci = (n) => {
+  if(n <= 1){
+    return n;
   }
-  
-  return fib;
+  else{
+    return(fibonacci(n-1) + fibonacci(n-2))
+  }
 }
+
+const print_sequence = (fib) => {
+  if (fib <= 0){
+    console.log("Please enter a positive integer");
+  } else {
+    console.log("Fibonacci sequence:");
+    for(let i = 0; i < fib; i++) {
+      console.log(fibonacci(i))
+    }
+  }
+}
+
+// console.log(print_sequence(5));
