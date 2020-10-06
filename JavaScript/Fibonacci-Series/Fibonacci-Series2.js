@@ -39,4 +39,3 @@ const fibonacciSequence = (numOfTerms) => {
 
 }    
 
-console.log(fibonacciSequence(9));
