@@ -10,5 +10,5 @@ function fibonacci(number){
      fiboArray.push(fiboArray[i-1] + fiboArray[i-2]);
     }
 
-    return fiboArray;
+    return fiboArray.toLocaleString();
 }
