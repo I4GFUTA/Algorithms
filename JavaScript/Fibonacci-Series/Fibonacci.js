@@ -4,10 +4,14 @@
 //This formula is attributed to Binet in 1843, though known by Euler before him.
 // Author: @GerardoUbuntu
 
-const fibonacci = (number) => { 
-    let Phi = Math.pow((1+Math.sqrt(5))/2,number)
-    let phi = Math.pow((1-Math.sqrt(5))/2,number) 
-    return Math.floor((Phi- phi) / Math.sqrt(5));
-}
-
-
+const fibonacci = (number) => {
+    let result = [];
+   
+    for (let i = 0; i <= number; i++) {
+        let Phi = Math.pow((1 + Math.sqrt(5)) / 2, i);
+        let phi = Math.pow((1 - Math.sqrt(5)) / 2, i);
+        result.push(Math.floor((Phi - phi) / Math.sqrt(5)));
+    }
+    
+    return result;
+};
