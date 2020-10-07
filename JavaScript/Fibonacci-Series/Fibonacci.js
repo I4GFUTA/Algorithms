@@ -13,5 +13,5 @@ const fibonacci = (number) => {
         result.push(Math.floor((Phi - phi) / Math.sqrt(5)));
     }
     
-    return result;
+    return result.toLocaleString();
 };
